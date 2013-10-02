@@ -1,16 +1,24 @@
 JYahooFinance
-=============
+=========
 
-Yahoo Finance Java API
+JYahooFinance is a simple API for querying the financial data available through Yahoo Finance.  Some of the features include:
 
-This API has the following core modules:
+  - Historical Prices
+  - Symbol Summary
 
-  1) Historical Prices
-  2) Live Price
-  
-Usage:
-LocalDate, YFHistoricalDataPoint> data = 
-			JYFHistoricalPrices.GetPrices("MMM", new LocalDate(2011,1,1), new LocalDate(2012,1,1));
+Version
+----
 
-Dependencies:
-Joda Time
+0.1
+
+Dependencies
+-----------
+
+JYahooFinance uses a number of open source projects to work properly:
+
+* [Joda Time] - Great Java date and time API
+
+License
+----
+
+MIT
