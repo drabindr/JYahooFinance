@@ -1,7 +1,7 @@
 JYahooFinance
 =========
 
-JYahooFinance is a simple API for querying the financial data available through Yahoo Finance.  Some of the features include:
+JYahooFinance is a simple API for querying data available through Yahoo Finance.  Some of the features include:
 
   - Historical Prices w/ dividends
   - Symbol Summary
