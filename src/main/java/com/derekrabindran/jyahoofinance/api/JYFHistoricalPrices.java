@@ -1,4 +1,4 @@
-package dr.jyahoofinance.api;
+package com.derekrabindran.jyahoofinance.api;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,15 +12,16 @@ import java.util.TreeMap;
 
 import org.joda.time.LocalDate;
 
-import dr.jyahoofinance.structs.YFHistoricalDataPoint;
+import com.derekrabindran.jyahoofinance.structs.JYFHistoricalDataPoint;
+
 
 public class JYFHistoricalPrices {
 	
-	public static Map<LocalDate, YFHistoricalDataPoint> GetPrices(
+	public static Map<LocalDate, JYFHistoricalDataPoint> GetPrices(
 			String symbol, LocalDate start, LocalDate end) throws IOException {
 
 		
-		Map<LocalDate, YFHistoricalDataPoint> retMap = new TreeMap<LocalDate, YFHistoricalDataPoint>();
+		Map<LocalDate, JYFHistoricalDataPoint> retMap = new TreeMap<LocalDate, JYFHistoricalDataPoint>();
 		
 		// populate historical prices
 		populateListWithData(symbol, start, end, retMap, false);
@@ -57,7 +58,7 @@ public class JYFHistoricalPrices {
 	}
 
 	private static void populateListWithData(String symbol, LocalDate start,
-			LocalDate end, Map<LocalDate, YFHistoricalDataPoint> retMap,
+			LocalDate end, Map<LocalDate, JYFHistoricalDataPoint> retMap,
 			boolean populateDividends) throws IOException {
 
 		URL url = new URL(buildURL(symbol, start, end, populateDividends));
@@ -82,11 +83,11 @@ public class JYFHistoricalPrices {
 				Double vol = Double.parseDouble(splitLine[5]);
 				Double adjClose = Double.parseDouble(splitLine[6]);
 
-				retMap.put(date, new YFHistoricalDataPoint(open, high, low, close,
+				retMap.put(date, new JYFHistoricalDataPoint(open, high, low, close,
 						vol, adjClose));
 			} else {
 				Double divValue = Double.parseDouble(splitLine[1]);
-				retMap.put(date, new YFHistoricalDataPoint(divValue));
+				retMap.put(date, new JYFHistoricalDataPoint(divValue));
 			}
 		}
 	}

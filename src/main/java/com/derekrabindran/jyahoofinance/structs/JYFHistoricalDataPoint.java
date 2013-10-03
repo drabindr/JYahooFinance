@@ -1,6 +1,6 @@
-package dr.jyahoofinance.structs;
+package com.derekrabindran.jyahoofinance.structs;
 
-public class YFHistoricalDataPoint extends YFData {
+public class JYFHistoricalDataPoint extends YFData {
 
 	
 	static enum YFHistoricalDataPointType {
@@ -18,18 +18,18 @@ public class YFHistoricalDataPoint extends YFData {
 	private Double dividendValue;
 	
 	// Dividend constructor
-	public YFHistoricalDataPoint(Double dividendValue) {
+	public JYFHistoricalDataPoint(Double dividendValue) {
 		super();
 		this.type = YFHistoricalDataPointType.Dividend;
 		this.dividendValue = dividendValue;
 	}
 
 	// price point
-	public YFHistoricalDataPoint(Double open,
+	public JYFHistoricalDataPoint(Double open,
 			Double high, Double low, Double close, Double volume,
 			Double adjClose) {
 		super();
-		this.type = type;
+		this.type = YFHistoricalDataPointType.Price;
 		this.open = open;
 		this.high = high;
 		this.low = low;
