@@ -1,6 +1,6 @@
 package com.derekrabindran.jyahoofinance.structs;
 
-public class JYFHistoricalDataPoint extends YFData {
+public class JYFHistoricalDataPoint {
 
 	
 	static enum YFHistoricalDataPointType {
