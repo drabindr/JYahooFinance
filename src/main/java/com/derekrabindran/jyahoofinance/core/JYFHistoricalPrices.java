@@ -1,4 +1,4 @@
-package com.derekrabindran.jyahoofinance.api;
+package com.derekrabindran.jyahoofinance.core;
 
 import java.io.BufferedReader;
 import java.io.IOException;

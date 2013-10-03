@@ -7,7 +7,7 @@ import java.util.Map.Entry;
 import org.joda.time.LocalDate;
 
 import com.derekrabindran.jyahoofinance.api.JYFApi;
-import com.derekrabindran.jyahoofinance.api.JYFHistoricalPrices;
+import com.derekrabindran.jyahoofinance.core.JYFHistoricalPrices;
 import com.derekrabindran.jyahoofinance.structs.JYFHistoricalDataPoint;
 import com.derekrabindran.jyahoofinance.structs.JYFSummaryData;
 
