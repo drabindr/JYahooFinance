@@ -24,6 +24,11 @@ LocalDate end = new LocalDate(2012,1,1);
 Map<LocalDate, YFHistoricalDataPoint> data = JYFHistoricalPrices.GetPrices(symbol, start, end);
 ```
 
+#### Get the symbol summary for 3M (MMM).
+```java
+JYFSummaryData i = JYFApi.GetSymbol("MMM");
+```
+
 Dependencies
 -----------
 
