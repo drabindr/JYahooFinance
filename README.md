@@ -26,7 +26,7 @@ Map<LocalDate, JYFHistoricalDataPoint> data = JYFHistoricalPrices.GetPrices(symb
 
 #### Get the symbol summary for 3M (MMM).
 ```java
-JYFSummaryData data = JYFApi.GetSymbol("MMM");
+JYFSummaryData data = JYFApi.GetSymbolSummary("MMM");
 ```
 
 Dependencies
