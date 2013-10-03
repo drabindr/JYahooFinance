@@ -25,7 +25,7 @@ public class Driver {
 		
 		
 		// Get Symbol summary
-		JYFSummaryData i = JYFApi.GetSymbol("MMM");
+		JYFSummaryData i = JYFApi.GetSymbolSummary("MMM");
 		System.out.println(i);
 		
 		

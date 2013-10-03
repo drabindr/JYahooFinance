@@ -29,8 +29,8 @@ public class JYFApi {
 	 * @return JYFSummaryData which contains summary fields.
 	 * @throws IOException
 	 */
-	public static JYFSummaryData GetSymbol(String symbol) throws IOException {
-		return JYFSummary.GetSymbol(symbol);
+	public static JYFSummaryData GetSymbolSummary(String symbol) throws IOException {
+		return JYFSummary.GetSymbolSummary(symbol);
 	}
 	
 }

@@ -18,7 +18,7 @@ public class JYFSummary {
 	 * @return Map of sorted data points.
 	 * @throws IOException
 	 */
-	public static JYFSummaryData GetSymbol(String symbol) throws IOException {
+	public static JYFSummaryData GetSymbolSummary(String symbol) throws IOException {
 		URL url = new URL(buildURL(symbol));
 		URLConnection urlConnection = url.openConnection();
 		BufferedReader breader = new BufferedReader(new InputStreamReader(
